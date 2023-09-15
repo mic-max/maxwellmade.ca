@@ -1,0 +1,28 @@
+title: Maxwell Made
+tagline: Custom Woodworking
+url: https://maxwellmade.ca
+email: mmaxwell@gmail.com
+description: TODO
+permalink: /:title
+locale: en_CA
+baseurl: ""
+timezone: America/Toronto
+
+# logo: /assets/micmax.pw
+
+author:
+  name: Michael Maxwell
+  email: "mmaxwellmade@gmail.com"
+
+# Build settings
+remote_theme: jekyll/minima@2863624b903b17f838d6ce8d2f77900fa9d3c864
+minima:
+  skin: dark
+
+exclude:
+  - CNAME
+  - README.md
+
+collections:
+  pieces:
+    output: true
