@@ -1,5 +1,19 @@
 # maxwellmade.ca
- 
+
+## Setup
+
+1. Install Ruby
+1. `bundle`
+1. `bundle install`
+1. `bundle exec jekyll serve --livereload`
+
+sections
+1. Portolio
+1. Store
+1. Contact
+  1. Social media 
+1. Commissions + Form
+
 chess boards x2 - tia, sam
 chess pieces
 
@@ -56,7 +70,13 @@ man box - place for keys, wallet, sunglasses, coins, etc.
 tree ring wall deco. or 4x4 cut to different lengths in a 2d grid on the wall.
 drawer dividers: https://www.amazon.com/gp/product/B07LB81G5S
   - 17.5" to 22" spring loaded. 2 5/8" height. and 5/8" thick.
-bookmarks.
+bookmarks
+  - laser cut and etched 3mm baltic birch plywood, or thin hardwood too!
+  - stain / paint <https://www.amazon.ca/dp/B09YXR2T9M>
+  - thread and bead through hole at top.
+  - 6" x 1.25"/1.5" x 1/16"/1/8" thick
+  - <https://jkcreativewood.com/product/wooden-bookmarks/>
+    - glue up pieces of wood in the arrangement, then get thin slices using a bandsaw. drum sand to final thickness.
 alphabetical vinyl markers: https://www.etsy.com/listing/1339035681/vinyl-record-divider-record-dividers?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=vinyl+record+storage&ref=sr_gallery-1-18&pro=1&frs=1&col=1&organic_search_click=1
   set of all 26 or customize the ranges. colour options stain. laser cut font selection.
 spotify codes. 

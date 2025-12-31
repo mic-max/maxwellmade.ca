@@ -1,28 +1,42 @@
 title: Maxwell Made
-tagline: Custom Woodworking
+tagline: 
+description: Custom woodworking projects made here
 url: https://maxwellmade.ca
-email: mmaxwell@gmail.com
-description: TODO
 permalink: /:title
 locale: en_CA
-baseurl: ""
-timezone: America/Toronto
-
-# logo: /assets/micmax.pw
+logo: /assets/images/logo.png
 
 author:
   name: Michael Maxwell
-  email: "mmaxwellmade@gmail.com"
+  email: mmaxwellmade@gmail.com
 
-# Build settings
-remote_theme: jekyll/minima@2863624b903b17f838d6ce8d2f77900fa9d3c864
-minima:
-  skin: dark
+collections:
+  products:
+    output: true
+    permalink: /:name
+    order:
+      - chess-board.md
+      - charcuterie.md
+      - vinyl-shelf.md
+      - bedframe.md
+      - chess-pieces.md
+      - cornhole.md
+      - desktop.md
+      - lead.md
+      - ring-calendar.md
+      - calendar-ring.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+    values:
+      layout: "base"
 
 exclude:
   - CNAME
   - README.md
-
-collections:
-  pieces:
-    output: true

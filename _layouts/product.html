@@ -1,0 +1,77 @@
+---
+layout: base
+---
+{% assign imgpath = "/assets/images/" | append: page.src %}
+
+<!-- Image gallery -->
+<div class="flex-container">
+    <!-- Left -->
+    <div class="image-section">
+        <div>
+            <span class='zoom' id='ex1'>
+                <img src='/assets/images/{{ page.src }}/1.jpg' width='500' />
+            </span>
+        </div>
+
+        <div>
+        {% for image in site.static_files %}
+            {% if image.path contains imgpath and image.basename != "thumb"%}
+                <img class="thumb" src="{{ site.baseurl }}{{ image.path }}" />
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div class="info-section">
+        <h1>{{ page.title }}</h1>
+        <p class="price-tag">${{ page.price }}</p>
+        
+        <br>
+        <br>
+
+        {% for x in page.options %}
+        <div class="option">
+            <label for="{{ x.id }}">{{ x.name }}</label>
+            <select name="{{ x.name }}" id="{{ x.id }}">
+            {% for y in x.opts %}
+
+            <!-- Assign Cost Text -->
+            {% assign costtext = y.text %}
+            <!-- {% assign costtext = y.text | append: " + $" | append: y.cost %} -->
+            <!-- {% if y.cost > 0 %}
+            {% elsif y.cost < 0 %}
+                {% assign costtext = y.text | append: " -$" | append: y.cost | abs %}
+            {% endif %} -->
+
+            {% if y.selected == true %}
+            <option selected="selected" value="{{ y.value }}">{{ costtext }}</option>
+            {% else %}
+            <option value="{{ y.value }}">{{ costtext }}</option>
+            {% endif %}
+            {% endfor %}
+            </select>
+        </div>
+        {% endfor %}
+
+        <button class='add-to-cart'>ADD TO CART</button>
+
+        <p>Weight: {{ page.weight }} lbs / {{ page.weight }} grams</p>
+        <p>Dimensions: {{ page.dimensions.h }} H {{ page.dimensions.w }} W x {{ page.dimensions.d }} D inches</p>
+        <p>S/N: {{ page.serial }}</p>
+
+        <br>
+
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<!-- include testimonials -->
+
+<!--
+    add click listener to button
+      sets cookie with the selected product data.
+      redirect to cart page
+-->
