@@ -1,0 +1,7 @@
+baseURL = 'https://maxwellmade.ca/'
+languageCode = 'en-ca'
+title = 'Maxwell Made'
+theme = 'ananke'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
