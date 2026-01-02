@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<article class="product">
+  <h1>{{ .Title }}</h1>
+
+  <p>{{ .Description }}</p>
+
+  <section>
+    <h2>Dimensions</h2>
+    <ul>
+      <li><strong>Length:</strong> {{ .Params.dimensions.length }}</li>
+      <li><strong>Height:</strong> {{ .Params.dimensions.height }}</li>
+      <li><strong>Depth:</strong> {{ .Params.dimensions.depth }}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Details</h2>
+    <ul>
+      <li><strong>Material:</strong> {{ .Params.material }}</li>
+      <li><strong>Finish:</strong> {{ .Params.finish }}</li>
+      <li><strong>Mounting:</strong> {{ .Params.mounting }}</li>
+    </ul>
+  </section>
+
+  <section>
+    {{ .Content }}
+  </section>
+</article>
+
+{{ end }}
