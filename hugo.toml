@@ -5,3 +5,13 @@ theme = 'ananke'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 50
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 50
