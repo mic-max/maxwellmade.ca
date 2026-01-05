@@ -1,25 +1,24 @@
 +++
-title = "Japanese Tool Chest"
-slug = "japanese-tool-chest"
-description = "A medium sized chest for storing anything you want"
-date = 2026-01-01
-draft = false
-
-price = "$145"
-material = "Eastern White Pine"
-finish = "Natural oil finish"
-mounting = "Hidden keyhole mounting"
-
-[dimensions]
-length = "25 in"
-height = "8.25 in"
-depth = "10.5 in"
-
-images = [
-  "image-01.png"
-]
+title = 'Japanese Tool Chest'
+price = 150
+weight = 30
 +++
-<!-- TODO: include a blog post link? -->
-## Overview
 
-A chest without hinges, the lid slides under the battens and is held in place with friction or during transportation use a wedge.
+Dimensions
+- 25" long
+- 10-1/2" wide
+- 8-1/4" tall
+
+Material
+- Eastern White Pine
+
+Details
+- Hand-cut dovetail joinery on corners
+- Nailed on bottom
+- Japanese style sliding lid that fits under battens
+- Recessed handles
+
+Finish
+- Polyurethane
+
+Can be used to store anything, not just tools!

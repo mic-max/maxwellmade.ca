@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ .Content }}
+  
+  <div class="product-grid">
+    {{ range where site.RegularPages "Section" "products" }}
+      <section class="product-card">
+        <a href="{{ .RelPermalink }}" class="product-main">
+          {{ with .Resources.GetMatch "0.jpg" }}
+            <img src="{{ .RelPermalink }}" class="product-main-image base" />
+          {{ end }}
+
+          {{ with .Resources.GetMatch "1.jpg" }}
+            <img src="{{ .RelPermalink }}" class="product-main-image hover" />
+          {{ end }}
+        </a>
+
+        <div class="product-meta">
+          <h3>{{ .LinkTitle }}</h2>
+          {{ with .Params.price }}
+            <h3>{{ printf "$%d" . }}</h2>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+
+{{ end }}

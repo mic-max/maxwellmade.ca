@@ -1,24 +1,19 @@
 +++
-title = "Staked Low Stool"
-slug = "staked-low-stool"
-description = "A 13in diameter platform elevated to 16in tall with four legs and an H-stretcher."
-date = 2026-01-01
-draft = false
-
-price = "$145"
-material = "Red elm, white oak"
-finish = "Natural oil finish"
-mounting = "Hidden keyhole mounting"
-
-[dimensions]
-length = "13 in"
-height = "16 in"
-depth = "13 in"
-
-images = [
-  "image-01.png"
-]
+title = 'Staked Low Stool'
+price = 150
+weight = 10
 +++
-## Overview
 
-This low stool is perfect for at the workbench or around a fire or as a platform or plant stand.
+Dimensions
+- 16" tall
+- 13" diameter seat
+
+Material
+- Hard Maple
+
+Finish
+- Hard wax
+
+Wedged through tenons secure all the components of this low stool. Good height for sitting around a fire or at a workbench.
+
+Table pictured is 16” Tall x 11” Wide but can be made to suit your custom specifications.

@@ -1,17 +1,13 @@
-baseURL = 'https://maxwellmade.ca/'
-languageCode = 'en-ca'
 title = 'Maxwell Made'
-theme = 'ananke'
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+baseURL = 'https://maxwellmade.ca/'
+languageCode = 'en-CA'
+theme = 'lemur'
 
-[[menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 50
+[permalinks]
+products = "/:slug/"
 
-[[menu.main]]
-name = "About"
-url = "/about/"
-weight = 50
+[menus]
+  [[menus.main]]
+    name = 'Contact'
+    pageRef = '/contact/'
+    weight = 30

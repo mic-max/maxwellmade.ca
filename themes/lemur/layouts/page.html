@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="product-page">
+  <div class="product-gallery">
+    {{ $images := .Resources.Match "*.jpg" }}
+
+    <div class="product-thumbs">
+      {{ range $i, $img := $images }}
+        <img
+          src="{{ $img.RelPermalink }}"
+          data-index="{{ $i }}"
+          class="product-thumb"
+        />
+      {{ end }}
+    </div>
+
+    <div class="product-main">
+      {{ with index $images 0 }}
+        <img
+          src="{{ .RelPermalink }}"
+          class="product-main-image"
+        />
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="product-info">
+    <h2>{{ .Title }}</h2>
+
+    {{ with .Params.price }}
+      <div class="product-price">{{ printf "$%d" . }}</div>
+    {{ end }}
+
+    <div class="product-description">
+      {{ .Content }}
+    </div>
+  </div>
+
+</article>
+{{ end }}
