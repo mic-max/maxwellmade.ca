@@ -1,6 +1,5 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-slug = '{{ .File.ContentBaseName }}'
-date = '{{ .Date }}'
+price = 100
 draft = true
 +++
