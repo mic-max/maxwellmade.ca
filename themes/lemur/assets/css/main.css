@@ -128,3 +128,30 @@ ul {
   gap: 1rem;
   flex-direction: column;
 }
+
+/* Product Page - Navigation */
+.product-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.nav-arrow {
+  padding: 1rem;
+  user-select: none;
+  border: solid 1px #222;
+  border-radius: 8px;
+}
+
+.nav-arrow--enabled {
+  cursor: pointer;
+}
+
+.nav-arrow--enabled:hover {
+  opacity: 0.6;
+}
+
+.nav-arrow--disabled {
+  opacity: 0.2;
+}

@@ -2,7 +2,7 @@
   {{ .Content }}
   
   <div class="product-grid">
-    {{ range where site.RegularPages "Section" "products" }}
+    {{ range where site.RegularPages.ByWeight "Section" "products" }}
       <section class="product-card">
         <a href="{{ .RelPermalink }}" class="product-main">
           {{ with .Resources.GetMatch "0.jpg" }}

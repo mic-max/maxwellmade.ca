@@ -34,6 +34,24 @@
       {{ .Content }}
     </div>
   </div>
-
 </article>
+
+<nav class="product-nav">
+  <div class="nav-left">
+    {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="nav-arrow nav-arrow--enabled">←</a>
+    {{ else }}
+      <span class="nav-arrow nav-arrow--disabled">←</span>
+    {{ end }}
+  </div>
+
+  <div class="nav-right">
+    {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="nav-arrow nav-arrow--enabled">→</a>
+    {{ else }}
+      <span class="nav-arrow nav-arrow--disabled">→</span>
+    {{ end }}
+  </div>
+</nav>
+
 {{ end }}
