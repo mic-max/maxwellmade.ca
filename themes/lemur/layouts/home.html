@@ -2,15 +2,27 @@
   {{ .Content }}
   
   <div class="product-grid">
-    {{ range where site.RegularPages.ByWeight "Section" "products" }}
+    {{ range $i, $p := where site.RegularPages.ByWeight "Section" "products" }}
       <section class="product-card">
-        <a href="{{ .RelPermalink }}" class="product-main">
-          {{ with .Resources.GetMatch "0.jpg" }}
-            <img src="{{ .RelPermalink }}" class="product-main-image base" />
+        <a href="{{ $p.RelPermalink }}" class="product-main">
+          {{ with $p.Resources.GetMatch "0.jpg" }}
+            <img
+              src="{{ .RelPermalink }}"
+              class="product-main-image base"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
           {{ end }}
 
-          {{ with .Resources.GetMatch "1.jpg" }}
-            <img src="{{ .RelPermalink }}" class="product-main-image hover" />
+          {{ with $p.Resources.GetMatch "1.jpg" }}
+            <img
+              src="{{ .RelPermalink }}"
+              class="product-main-image hover"
+              loading="lazy"
+              fetchpriority="low"
+              decoding="async"
+            />
           {{ end }}
         </a>
 
