@@ -4,6 +4,8 @@ price = 150
 weight = 30
 +++
 
+A nice and simple chest that can be used to store anything, not just tools! It is a great size that anyone can carry and efficiently uses materials to optimize the total interior volume.
+
 Dimensions
 - 25" long
 - 10-1/2" wide
@@ -20,5 +22,3 @@ Details
 
 Finish
 - Polyurethane
-
-Can be used to store anything, not just tools!

@@ -4,6 +4,8 @@ price = 200
 weight = 20
 +++
 
+This staked high stool features wedged through tenon joinery for the legs and stretchers. Making a solid seat for use at counter height.
+
 Dimensions
 - 25" tall
 - 20" wide seat
@@ -14,5 +16,3 @@ Material
 
 Finish
 - Hard wax
-
-This staked high stool features wedged through tenon joinery for the legs and stretchers. Making a solid seat for use at counter height.
