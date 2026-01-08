@@ -7,6 +7,7 @@ body {
   color: #222;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 2rem auto;
+  padding: 0 2rem;
   max-width: 1080px;
 }
 
@@ -26,6 +27,7 @@ footer {
 h1, h2, h3 {
   font-weight: normal;
   font-variant: small-caps;
+  white-space: nowrap;
 }
 
 a {
@@ -49,10 +51,25 @@ nav a.active {
   border-bottom: solid 1px #222;
 }
 
+/* Mobile Default */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1180px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 img {
