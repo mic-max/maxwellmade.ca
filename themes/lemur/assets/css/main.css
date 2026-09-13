@@ -30,6 +30,16 @@ h1, h2, h3 {
   white-space: nowrap;
 }
 
+a h1 {
+  border: 1px solid #222;
+  padding: 0 6px;
+}
+
+a h1:hover {
+  border-color: transparent;
+  padding: 0 6px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
